@@ -2559,7 +2559,7 @@ textarea.form-control-lg {
 }
 
 .form-check-input:checked[type="checkbox"] {
-  background-image: url("../../images/icon_check.svg");
+  background-image: url("../images/icon_check.svg");
 }
 
 .form-check-input:checked[type="radio"] {

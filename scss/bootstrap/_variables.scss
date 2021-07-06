@@ -749,7 +749,7 @@ $form-check-input-focus-box-shadow:       $input-btn-focus-box-shadow !default;
 $form-check-input-checked-color:          $component-active-color !default;
 $form-check-input-checked-bg-color:       #ffffff; // 自定義
 $form-check-input-checked-border-color:   $form-check-input-checked-bg-color !default;
-$form-check-input-checked-bg-image:       url("../../images/icon_check.svg"); // 自定義
+$form-check-input-checked-bg-image:       url("../images/icon_check.svg"); // 自定義
 $form-check-radio-checked-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$form-check-input-checked-color}'/></svg>") !default;
 
 $form-check-input-indeterminate-color:          $component-active-color !default;
