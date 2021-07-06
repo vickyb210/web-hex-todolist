@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+// 背景兩塊矩形
+.bg-cube {
+  position: fixed;
+  height: 583px;
+  opacity: 0.5;
+  z-index: -1;
+
+  &:nth-child(1) {
+    width: 752px;
+    background: #4ecea2;
+    transform: rotate(-30deg);
+    top: -50px;
+    right: -83px;
+  }
+  &:nth-child(2) {
+    width: 625px;
+    background: #6696bc;
+    transform: rotate(30deg);
+    bottom: 0;
+    left: -100px;
+  }
+}
+
+.bg-gradient {
+  background: linear-gradient(90deg, $teal, transparent);
+}
+
+.title {
+  width: 30px;
+}
+
+.btn-add {
+  width: 12%;
+}
+
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+
+// hover狀態時close按鈕才出現
+.btn-close {
+  display: none;
+}
+
+.list-group-item:hover {
+  .btn-close {
+    display: block;
+  }
+}
