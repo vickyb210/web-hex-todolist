@@ -48,7 +48,6 @@ function init() {
 // 根據value的值決定checkbox要不要改為checked=true(被選中劃掉)的狀態
 function todoChecked() {
     const todoCheckbox = document.querySelectorAll('.list-group li input');
-    let count = 0;
     todoCheckbox.forEach(function (item) {
         if (item.getAttribute("value") == "已完成") {
             item.checked = true;
