@@ -30,8 +30,8 @@ function init() {
         } else if (activeTab.textContent == eachStatus) {
             // 目前選取的tab=已完成或待完成時，才存進去str
             str += `<li class="list-group-item d-flex"><input class="form-check-input me-3" id="todo-${index}" type="checkbox" value="${eachStatus}" onclick="changeStatus(${index})">
-               <label class="w-100" for="todo-${index}">${eachMission}</label><button onclick="deleteTodo(${index})" type="button" class="btn-close"></button>
-               </li>`;
+                    <label class="w-100" for="todo-${index}">${eachMission}</label><button onclick="deleteTodo(${index})" type="button" class="btn-close"></button>
+                    </li>`;
         }
         // 若status是待完成則doneCount加一
         if (eachStatus == "待完成") {
