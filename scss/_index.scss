@@ -54,3 +54,13 @@ input[type="checkbox"]:checked + label {
     display: block;
   }
 }
+
+.header {
+  width: 50%;
+}
+
+@media (max-width: 600px) {
+  .header {
+    width: 100%;
+  }
+}

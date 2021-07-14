@@ -11641,4 +11641,14 @@ input[type="checkbox"]:checked + label {
 .list-group-item:hover .btn-close {
   display: block;
 }
+
+.header {
+  width: 50%;
+}
+
+@media (max-width: 600px) {
+  .header {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=all.css.map */

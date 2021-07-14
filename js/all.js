@@ -12,6 +12,7 @@ let list = [
 const listGroup = document.querySelector('.list-group');
 // 左下角待完成事項數量
 const listNum = document.querySelector('.list-num');
+const nav = document.querySelector('.nav');
 
 // 初始資料呈現
 function init() {
@@ -59,7 +60,6 @@ function todoChecked() {
 init();
 
 // TAB篩選
-const nav = document.querySelector('.nav');
 nav.addEventListener('click', function (e) {
     init();
 })
@@ -92,6 +92,14 @@ btnAdd.addEventListener('click', function (e) {
     init();
     inputTodo.value = ""; // 清空輸入框
 })
+
+// 按ENTER就送出
+inputTodo.addEventListener("keyup", function (e) {
+    if (e.keyCode === 13) {
+        e.preventDefault();
+        btnAdd.click();
+    }
+});
 
 // 刪除個別代辦事項
 function deleteTodo(index) {
